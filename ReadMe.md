@@ -10,11 +10,15 @@ $ docker build -t mono_docker .
 1. compile
     ```
     $ docker run -it --rm -v $PWD:$PWD mono_docker mcs ${PWD}/hello.cs
+    /tmp/mono_docker/example/hello.cs
+    success compilation!
     ```
 
 2. run
    ```
-   docker run -it --rm -v $PWD:$PWD mono_docker mono ${PWD}/hello.exe
+   $ docker run -it --rm -v $PWD:$PWD mono_docker mono ${PWD}/hello.exe
+   /tmp/docker_ws/mono_docker/example/hello.exe
+   hello Mono World
    ```
 
 # recommend
